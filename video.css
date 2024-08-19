@@ -1,0 +1,244 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+link img {
+    width: 500%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+img {
+    cursor: pointer;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.video-container{
+    padding-left: 2rem;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.video-container .content-left{
+    flex-basis: 67%;
+}
+
+/* .video-container .video {
+    width: 100%;
+    border-radius: 10px;
+} */
+
+.video-container .video iframe {
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+.video-container .content-right{
+    flex-basis: 31%;
+    margin-right: 15px;
+}
+
+.Video-list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.Video-list img{
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.titalfont{
+    font-weight: 700;
+}
+
+.below-content-container{
+    color: white;
+}
+
+.FontHeading{
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.other-datils{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .6rem;
+}
+
+.other-datils-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.channelAndIcon , .joinAndsubscribersButtonContainer , .other-datils-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.other-datils-right{
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.other-datils-right img{
+    width: 30px;
+    padding: 0.1rem;
+    border: 2px solid gray;
+    border-radius: 40%;
+    color: white;
+    background-color: #2e2e2e;
+}
+
+.channelIcon{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.subCount{
+    font-size: .7rem;
+}
+
+.joinAndsubscribersButtonContainer button{
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.joinButton{
+    padding: .5rem 1.5rem;
+    margin-right: 1rem;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.subsButton {
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+    background-color: #2e2e2e;
+    color: white;
+    font-weight: 600;
+}
+
+.changsubsButton{
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.descriptionConrtainer{
+    background-color: #2e2e2e;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.descriptionConrtainer p{
+    font-size: 1rem;
+}
+
+.commentConrtainer{
+    margin-top: 2rem;
+}
+
+.commentConrtainer h1{
+    font-size: 1.5rem;
+}
+
+.writecommentConrtainer{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.writecommentConrtainer input{
+    padding: .1rem .1rem .3rem .1rem; 
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: .5px solid white;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.previouscomments{
+    margin-top: 2rem;
+}
+
+.channelName .channelName{
+    font-size: .7rem;
+    margin-bottom: .2rem;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .Sidebar a p,
+    .CreateImage,
+    .notificationImage,
+    .Sidebar,
+    .menu-icon,
+    .mic-div,
+    .search-Box {
+        display: none;
+    }
+   
+    .video-container .video iframe {
+        width: 100%;
+        height: 20vh;
+        border-radius: 10px;
+    }
+
+    .video-container{
+        padding: 0.9rem;
+    }
+
+    .commentConrtainer {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .video-container .content-right{
+        margin-right: 0%;
+    }
+
+    .other-datils {
+        display: flex;
+        margin-top: .6rem;
+    }
+    .content {
+        flex-direction: column;
+    }
+}

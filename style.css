@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: rgb(34 , 34, 34);
+}
+
+img{
+    cursor: pointer;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+/* Navbar Start */
+nav{
+    /* border: 2px solid red; */
+    padding: 10px 20px;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(34, 34, 34);
+}
+
+.nav-right img{
+    width: 33px;
+    margin-right: 20px;
+}
+
+.nav-left img {
+    width: 39px;
+}
+
+.nav-left .YoutubeLogo {
+    width: 135px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.nav-right .CreateImage {
+    width: 45px;
+}
+
+.nav-right .UserImage {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.nav-middel{
+    width: 50%;
+}
+
+.search-Box{
+    width: 90%;
+    border: 1px solid gray;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+
+.search-Box input {
+    width: 80%;
+    border: none;
+    padding: .5rem;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+}
+.Search-Div{
+    background-color: rgb(72, 72, 72);
+    width: 10%;
+    /* border-radius: 50px; */
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    justify-content: center;
+}
+.search-Box img {
+    padding: 10px;
+    width: 80%;
+    /* border-radius: 50px; */
+}
+
+.nav-middel .micIcorn{
+    width: 50px;
+    background-color: rgb(72, 72, 72);
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+.mic-div{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 50%;
+}
+.micIcorn{
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/* Navbar Finsh */
+
+/* Sidebar Start */
+
+.Sidebar{
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    padding: 10px;
+    padding-top: 100px;
+}
+
+.smaller-sidebar{
+    width: 5%;
+}
+
+.smaller-sidebar a p{
+    display: none;
+}
+
+.Sidebar-upper a{
+    padding: 12px;
+    margin-bottom: 2px;
+    
+}
+
+.Sidebar-upper a img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.Sidebar-upper a:first-child{
+    border-radius: 10px;
+    background-color: #2e2e2e;
+}
+
+.Sidebar-upper a:hover {
+    border-radius: 10px;
+    background-color: #2e2e2e;
+}
+
+/* Sidebar Finsh */
+
+/* Main Section Start */
+
+.mainContainer{
+    margin-left: 17%;
+    flex-wrap: wrap;
+}
+
+.larger-mainContainer{
+    margin-left: 7%;
+    flex-wrap: wrap;
+}
+
+/* .mainContainer .d-flex{
+    align-items: flex-start;
+} */
+
+.card{
+    width: 383px;
+    margin-right: 36px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.larger-card{
+    width: 433px;
+    margin-right: 36px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.thumbanailImage{
+    width: 100%;
+    border-radius: 5%;
+    margin-bottom: 5px;
+}
+
+.logoContainer .UserImage{
+    border-radius: 50%;
+    width: 39px;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+    .Sidebar a p,
+    .CreateImage,
+    .notificationImage,
+    .Sidebar,
+    .menu-icon,
+    .mic-div,
+    .search-Box{
+        display: none;
+    }
+    .card {
+        width: 350px;
+    }
+    .nav-left .YoutubeLogo {
+        width: 100px;
+        margin:0px;
+    }
+    .mainContainer{
+        margin-left: 33px;
+    }
+}
